@@ -1,8 +1,12 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { PropTypes } from "prop-types";
-import { addContact, fetchContacts } from "redux/contacts/contacts-operations";
+import {
+  addContact,
+  fetchContacts,
+} from "../../redux/contacts/contacts-operations";
 import s from "./ContactForm.module.css";
 
 export default function ContactForm({ onSubmit }) {
@@ -22,6 +26,7 @@ export default function ContactForm({ onSubmit }) {
     setName("");
     setPhone("");
   };
+  console.log(onSubmit);
 
   const handleSubmit = (e) => {
     resetState();

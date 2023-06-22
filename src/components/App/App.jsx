@@ -1,6 +1,7 @@
 import React from "react";
-import ContactForm from "components/ContactForm/ContactForm";
-import ContactList from "components/ContactList/ContactList";
+import ContactForm from "../ContactForm";
+import ContactList from "../ContactList";
+import Filter from "../Filter";
 import s from "./App.module.css";
 
 export default function App() {
@@ -13,7 +14,7 @@ export default function App() {
       <ContactForm />
 
       <h2 className={s.title}>Contacts</h2>
-      {/* <Filter /> */}
+      <Filter />
       <ContactList />
     </div>
   );
