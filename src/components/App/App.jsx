@@ -1,6 +1,7 @@
 import React from "react";
+import ContactForm from "components/ContactForm/ContactForm";
 
-import s from './App.module.css';
+import s from "./App.module.css";
 
 export default function App() {
   return (
@@ -9,11 +10,11 @@ export default function App() {
         <h1 className={s.main_title}>Phonebook</h1>
       </div>
 
-      {/* <ContactForm /> */}
+      <ContactForm />
 
       <h2 className={s.title}>Contacts</h2>
       {/* <Filter /> */}
       {/* <ContactList /> */}
     </div>
   );
-};
+}
